@@ -1,0 +1,186 @@
+:root {
+    --letrasClaras: whitesmoke;
+    --sombra: 0 6px 12px rgba(0, 0, 0, 0.301);
+    --radius: 0.6rem;
+}
+
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url(img/numeros.jpg);
+    background-size: cover;
+    color: var(--letrasClaras);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    flex-direction: column;
+}
+
+section {
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+h1 {
+    font-style: italic;
+    font-size: 2.5rem;
+}
+
+footer {
+    font-style: italic;
+    font-size: 0.7rem;
+}
+
+#msg {
+    margin-bottom: 1rem;
+}
+
+#resultado {
+    display: none;
+}
+
+
+.principal {
+    align-items: center;
+    border-radius: var(--radius);
+    box-shadow: var(--sombra);
+    background: rgba(245, 245, 245, 0.767);
+    padding: 2rem;
+    margin: 2rem;
+    width: 30rem;
+    color: #000000;
+}
+
+.resultado {
+
+    margin: 15px;
+    padding: 2rem;
+    border-radius: var(--radius);
+}
+
+input.imptNum {
+    margin-bottom: 0.8rem;
+    width: 52%;
+    padding: 0.6rem;
+    border: 0.1rem solid #ddd;
+    border-radius: var(--radius);
+    font-size: 1.2rem;
+    transition: 0.3s;
+    box-shadow: var(--sombra);
+
+}
+
+input.imptNum:focus {
+    border-color: #007BFF;
+
+    outline: 2px solid #0056b3
+}
+
+p {
+    font-weight: bold;
+    margin: 1rem 0 0.2rem;
+}
+
+input[type="button"] {
+    text-align: center;
+    justify-content: center;
+    height: 2.5rem;
+    box-shadow: var(--sombra);
+    background-color: #007BFF;
+    color: var(--letrasClaras);
+    border: none;
+    font-size: 1.2rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="button"]:hover {
+    box-shadow: 0 6px 12px rgba(10, 6, 211, 0.459);
+    background-color: #0056b3;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    align-items: center;
+    width: 98%;
+    padding: 8px;
+
+}
+
+.grid-item {
+    padding: 2px;
+    text-align: center;
+    font-size: 18px;
+    border: 0.5px solid #ccc;
+}
+
+#selecTab {
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 80%;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    border: 1px solid #007BFF;
+    border-radius: var(--radius);
+    background-color: var(--letrasClaras);
+    color: #000000;
+    box-shadow: var(--sombra);
+    transition: 0.3s ease;
+    text-align: center;
+}
+
+#selecTab:hover {
+    background-color: #e9f0fe;
+}
+
+
+@media (max-width: 800px) {
+    #selecTab {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+        text-align: left;
+    }
+
+
+    input[type="button"] {
+        margin: 0.5rem;
+        font-size: 1rem;
+    }
+
+    #AdcButton {
+        max-width: 50%;
+    }
+
+    .principal {
+        width: 80%;
+        margin: 1rem auto;
+    }
+
+    .resultado {
+        width: 75%;
+        margin: 1rem auto;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    input.imptNum {
+        width: 90%;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+
+    input.verificar,
+    #selecTab {
+        width: 100%;
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de Números</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    
+    <section>
+        <header>
+            <h1>Analisador de Números</h1>
+        </header>
+        <div class="principal">
+            <p>Digite um número entre 1 a 100.</p>
+            <p>
+                <input type="number" name="numero" id="num" placeholder="Digite um numero" class="imptNum">
+                <input type="button" value="Adicionar" onclick="AdicionarNum()" class="verificar" id="AdcButton">
+            </p>
+            <div class="grid-container">
+                <select id="selecTab" size="6" class="item1"></select>
+                <input type="button" value="Finalizar" onclick="resultado()" class="verificar">
+
+            </div>
+            <div class="resultado" id="resultado">
+                <div id="msg"></div>
+            </div>
+            <footer>
+                <p>Desenvolvido por Anderson Silva Rossi.</p>
+            </footer>
+        </div>
+
+    </section>
+    <script src="assets/JS/script.js"></script>
+</body>
+
+</html>
